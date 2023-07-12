@@ -98,7 +98,7 @@ const route = useRoute();
 
 const getCurrentWeather = async () => {
   try {
-    const weatherData = await axios.get(`http://api.weatherapi.com/v1/current.json?key=47a51ac91d6f491c953222711230507&q=${route.query.location}&aqi=no&lang=${browserLocales[0]}`);
+    const weatherData = await axios.get(`https://api.weatherapi.com/v1/current.json?key=47a51ac91d6f491c953222711230507&q=${route.query.location}&aqi=no&lang=${browserLocales[0]}`);
     return weatherData.data;
   } catch (error) {
     console.log(error);
@@ -107,7 +107,7 @@ const getCurrentWeather = async () => {
 
 const getForecastWeather = async () => {
   try {
-    const forecastData = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=47a51ac91d6f491c953222711230507&q=${route.query.location}&days=7&aqi=no&alerts=no&hour=12`);
+    const forecastData = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=47a51ac91d6f491c953222711230507&q=${route.query.location}&days=7&aqi=no&alerts=no&hour=12`);
     return forecastData.data.forecast.forecastday;
   } catch (error) {
     console.log(error);

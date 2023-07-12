@@ -64,7 +64,7 @@ const getSearchResults = () => {
   queryTimeout.value = setTimeout(async () => {
     if(searchQuery.value !== ''){
       const result = await axios.get(
-      `http://api.weatherapi.com/v1/search.json?key=${APIKey}&q=${searchQuery.value}`
+      `https://api.weatherapi.com/v1/search.json?key=${APIKey}&q=${searchQuery.value}`
       );
       searchResults.value = result.data;
       return;
