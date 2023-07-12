@@ -5,9 +5,12 @@ module.exports = {
     extend: {
       colors: {
         "custom-black": "#1A1A1A",
-        "custom-green": "00A695",
+        "custom-green": "#00A695",
         "custom-blue": "#006DAA",
         "custom-dark-blue": "#0353A4",
+      },
+      backgroundImage:{
+        'hero-background': 'url("/src/assets/images/hero-background.jpg")',
       }
     },
     fontFamily: {
