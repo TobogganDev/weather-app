@@ -2,7 +2,7 @@
   <div>
     <router-link to="/" class="px-4 py-2 rounded-xl text-white bg-custom-green flex items-center gap-2 w-fit"> <i class="fa-solid fa-chevron-left"></i> back</router-link>
     <Suspense>
-      <AsyncCityView />
+      <CityViewDetails />
       <template #fallback class="flex justify-center">
         <div class="loading"></div>
       </template>
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import AsyncCityView from '../components/AsyncCityView.vue';
+import CityViewDetails from '../components/CityViewDetails.vue';
 </script>
 
 <style>
