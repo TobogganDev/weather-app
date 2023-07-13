@@ -4,7 +4,9 @@
     <Suspense>
       <CityViewDetails />
       <template #fallback class="flex justify-center">
-        <div class="loading"></div>
+        <div class="w-full h-[50vh] flex items-center justify-center">
+          <div class="loading"></div>
+        </div>
       </template>
     </Suspense>
   </div>
