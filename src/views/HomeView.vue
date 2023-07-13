@@ -32,6 +32,16 @@
       </template>
       </ul>
     </div>
+
+    <div class="mx-auto max-w-3xl justify-center ">
+      <h2 class="text-3xl mb-10">Le temps dans le monde</h2>
+      <div class="flex flex-wrap gap-6">
+        <div v-for="city in cityFrance" @click="previewCity(city)" class="w-56 rounded-xl overflow-hidden cursor-pointer">
+          <img src="https://picsum.photos/id/1076/600/400" alt="">
+          <p class="bg-custom-green py-2 px-1">{{ city.name }}, {{ city.region }}</p>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -41,6 +51,15 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
+
+const cityFrance = [
+  {'name': 'Paris', 'region': 'Ile-de-france'},
+  {'name': 'Los Angeles', 'region': 'California'},
+  {'name': 'Mumbai', 'region': 'Maharashtra'},
+  {'name': 'Moscow', 'region': 'Moscow City'},
+  {'name': 'Montreal', 'region': 'Quebec'},
+  {'name': 'Honolulu', 'region': 'Hawaii'},
+]
 
 const APIKey = '47a51ac91d6f491c953222711230507';
 
