@@ -1,7 +1,9 @@
 <template>
   <div class="font-Lexend flex flex-col min-h-screen bg-custom-black ">
     <HomeHero />
-    <Suspense><RouterView class="py-10 px-4"/></Suspense>
+    <Suspense>
+      <RouterView class="py-10 px-4"/>
+    </Suspense>
     
   </div>
 </template>
