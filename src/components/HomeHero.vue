@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-52 flex items-center relative" title="Photo de Aleksandra Boguslawska sur Unsplash">
+  <header class="w-full h-60 flex items-center relative justify-center text-custom-blue">
     <div class="relative">
       <h1 class="font-Righteous text-8xl">Weather App</h1>
     </div>
